@@ -1,11 +1,11 @@
-module DOM.WebStorage.Storage
+module Web.Storage
   ( length
   , key
   , getItem
   , setItem
   , removeItem
   , clear
-  , module DOM.WebStorage.Types
+  , module Web.Storage.Types
   ) where
 
 import Prelude
@@ -13,7 +13,7 @@ import Prelude
 import Control.Monad.Eff (Eff)
 
 import DOM (DOM)
-import DOM.WebStorage.Types (Storage)
+import Web.Storage.Types (Storage)
 
 import Data.Maybe (Maybe)
 import Data.Nullable (Nullable, toMaybe)

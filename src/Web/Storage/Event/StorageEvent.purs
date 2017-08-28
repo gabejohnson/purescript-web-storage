@@ -1,17 +1,17 @@
-module DOM.WebStorage.Event.StorageEvent
+module Web.Storage.Event.StorageEvent
   ( key
   , oldValue
   , newValue
   , url
   , storageArea
-  , module DOM.WebStorage.Event.Types
-  , module DOM.WebStorage.Types
+  , module Web.Storage.Event.Types
+  , module Web.Storage.Types
   ) where
 
 import Prelude
 
-import DOM.WebStorage.Types (Storage)
-import DOM.WebStorage.Event.Types (StorageEvent)
+import Web.Storage.Types (Storage)
+import Web.Storage.Event.Types (StorageEvent)
 
 import Data.Maybe (Maybe)
 import Data.Nullable (Nullable, toMaybe)

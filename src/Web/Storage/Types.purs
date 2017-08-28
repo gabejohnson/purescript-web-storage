@@ -1,4 +1,4 @@
-module DOM.WebStorage.Types where
+module Web.Storage.Types where
 
 import Data.Foreign (Foreign, F, unsafeReadTagged)
 

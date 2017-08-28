@@ -1,4 +1,4 @@
-module DOM.WebStorage.Event.Types where
+module Web.Storage.Event.Types where
 
 import Data.Foreign (Foreign, F, unsafeReadTagged)
 
