@@ -1,5 +1,13 @@
 "use strict";
 
+exports.localStorage = function () {
+  return window.localStorage;
+};
+
+exports.sessionStorage = function () {
+  return window.sessionStorage;
+};
+
 exports.length = function (storage) {
   return function () {
     return storage.length;

@@ -5,6 +5,8 @@ module Web.Storage
   , setItem
   , removeItem
   , clear
+  , localStorage
+  , sessionStorage
   , module Web.Storage.Types
   ) where
 
@@ -16,9 +18,9 @@ import Control.Monad.Eff (Eff)
 import Data.Maybe (Maybe)
 import Data.Nullable (Nullable, toMaybe)
 
-foreign import length :: forall eff. Storage -> Eff (dom :: DOM | eff) Int
+foreign import localStorage :: forall eff. Eff (storage :: STORAGE | eff) Storage
 
-foreign import _key :: forall eff. Int -> Storage -> Eff (dom :: DOM | eff) (Nullable String)
+foreign import sessionStorage :: forall eff. Eff (storage :: STORAGE | eff) Storage
 
 foreign import length :: forall eff. Storage -> Eff (storage :: STORAGE | eff) Int
 
